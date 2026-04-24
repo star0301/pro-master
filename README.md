@@ -36,7 +36,8 @@ https://tomato-expert.github.io/pro-master/
     - https://gemini.google.com/share/8e64303a929c
   - 2026.04.01 : 워크샵 신청버튼 및 실기시험 범위 수정
     - https://gemini.google.com/share/bca74dfc0603
-
+  - 2026.04.24 : 7회차 온라인+오프라인 시험 접수 마감
+    - https://gemini.google.com/share/e449c4e83956
 
 
 ----
