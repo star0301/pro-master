@@ -305,73 +305,157 @@
                             2026 오프라인 교육 워크샵 지역
                         </h3>
                         
-                        <div class="relative px-4 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0">
-                            <div class="timeline-line"></div>
+                        <!-- 타임라인 래퍼 (상/하반기 2줄) -->
+                        <div class="relative px-2 md:px-4 pb-4 lg:pb-0">
+                            <!-- 모바일용 수직 통일 라인 (1~12월 관통) -->
+                            <div class="absolute left-[36px] md:hidden top-6 bottom-6 w-[2px] bg-gray-200 z-0"></div>
                             
-                            <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0 relative min-w-max md:min-w-0">
-                                <!-- 1월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
-                                        <span class="text-red-600 font-bold text-xs uppercase">JAN</span>
+                            <!-- 상반기 (1~6월) -->
+                            <div class="relative z-10">
+                                <!-- PC용 수평 라인 -->
+                                <div class="hidden md:block absolute left-[8%] right-[8%] top-6 h-[2px] bg-gray-200 -z-10"></div>
+                                
+                                <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+                                    <!-- 1월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">JAN</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 1월</p>
+                                            <p class="text-xs text-gray-500 mt-1">경기도 가평</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-gray-800">2026년 1월</p>
-                                        <p class="text-xs text-gray-500 mt-1">경기도 가평</p>
+
+                                    <!-- 2월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">FEB</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 2월</p>
+                                            <p class="text-xs text-gray-500 mt-1">충남 공주</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">MAR</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 3월</p>
+                                            <p class="text-xs text-gray-500 mt-1">대구</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">APR</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 4월</p>
+                                            <p class="text-xs text-gray-500 mt-1">경기도 화성</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">MAY</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 5월</p>
+                                            <p class="text-xs text-gray-500 mt-1">경기도 용인</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6월 (과거 상태로 변경) -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
+                                            <span class="text-red-600 font-bold text-xs uppercase">JUN</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-800">2026년 6월</p>
+                                            <p class="text-xs text-gray-500 mt-1">대구</p>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!-- 2월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
-                                        <span class="text-red-600 font-bold text-xs uppercase">FEB</span>
+                            <!-- 하반기 (7~12월) -->
+                            <div class="relative z-10 mt-10 md:mt-16">
+                                <!-- PC용 수평 라인 -->
+                                <div class="hidden md:block absolute left-[8%] right-[8%] top-6 h-[2px] bg-gray-200 -z-10"></div>
+                                
+                                <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-8 md:space-y-0">
+                                    <!-- 7월 (현재 집중 타겟 하이라이트) -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
+                                        <div class="w-12 h-12 rounded-full bg-red-600 border-4 border-white flex items-center justify-center z-10 shadow-lg group-hover:scale-110 transition relative">
+                                            <span class="text-white font-bold text-xs uppercase">JUL</span>
+                                            <!-- 물결(Ping) 애니메이션 -->
+                                            <span class="absolute inset-0 rounded-full border-2 border-red-500 animate-ping opacity-30"></span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-red-600">2026년 7월</p>
+                                            <p class="text-xs text-red-500 font-bold mt-1">경기도 화성</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-gray-800">2026년 2월</p>
-                                        <p class="text-xs text-gray-500 mt-1">충남 공주</p>
-                                    </div>
-                                </div>
 
-                                <!-- 3월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
-                                        <span class="text-red-600 font-bold text-xs uppercase">MAR</span>
+                                    <!-- 8월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1 opacity-50">
+                                        <div class="w-12 h-12 rounded-full bg-gray-50 border-4 border-gray-200 flex items-center justify-center z-10 shadow-sm">
+                                            <span class="text-gray-400 font-bold text-xs uppercase">AUG</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-400">2026년 8월</p>
+                                            <p class="text-xs text-gray-400 mt-1">일정 준비중</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-gray-800">2026년 3월</p>
-                                        <p class="text-xs text-gray-500 mt-1">대구</p>
-                                    </div>
-                                </div>
 
-                                <!-- 4월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
-                                        <span class="text-red-600 font-bold text-xs uppercase">APR</span>
+                                    <!-- 9월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1 opacity-50">
+                                        <div class="w-12 h-12 rounded-full bg-gray-50 border-4 border-gray-200 flex items-center justify-center z-10 shadow-sm">
+                                            <span class="text-gray-400 font-bold text-xs uppercase">SEP</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-400">2026년 9월</p>
+                                            <p class="text-xs text-gray-400 mt-1">일정 준비중</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-gray-800">2026년 4월</p>
-                                        <p class="text-xs text-gray-500 mt-1">경기도 화성</p>
-                                    </div>
-                                </div>
 
-                                <!-- 5월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center z-10 shadow-sm group-hover:scale-110 transition">
-                                        <span class="text-red-600 font-bold text-xs uppercase">MAY</span>
+                                    <!-- 10월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1 opacity-50">
+                                        <div class="w-12 h-12 rounded-full bg-gray-50 border-4 border-gray-200 flex items-center justify-center z-10 shadow-sm">
+                                            <span class="text-gray-400 font-bold text-xs uppercase">OCT</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-400">2026년 10월</p>
+                                            <p class="text-xs text-gray-400 mt-1">일정 준비중</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-gray-800">2026년 5월</p>
-                                        <p class="text-xs text-gray-500 mt-1">경기도 용인</p>
-                                    </div>
-                                </div>
 
-                                <!-- 6월 -->
-                                <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1">
-                                    <div class="w-12 h-12 rounded-full bg-red-600 border-4 border-white flex items-center justify-center z-10 shadow-lg group-hover:scale-110 transition">
-                                        <span class="text-white font-bold text-xs uppercase">JUN</span>
+                                    <!-- 11월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1 opacity-50">
+                                        <div class="w-12 h-12 rounded-full bg-gray-50 border-4 border-gray-200 flex items-center justify-center z-10 shadow-sm">
+                                            <span class="text-gray-400 font-bold text-xs uppercase">NOV</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-400">2026년 11월</p>
+                                            <p class="text-xs text-gray-400 mt-1">일정 준비중</p>
+                                        </div>
                                     </div>
-                                    <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
-                                        <p class="text-sm font-bold text-red-600">2026년 6월</p>
-                                        <p class="text-xs text-red-500 font-bold mt-1">대구</p>
+
+                                    <!-- 12월 -->
+                                    <div class="flex md:flex-col items-center text-left md:text-center group flex-1 px-1 opacity-50">
+                                        <div class="w-12 h-12 rounded-full bg-gray-50 border-4 border-gray-200 flex items-center justify-center z-10 shadow-sm">
+                                            <span class="text-gray-400 font-bold text-xs uppercase">DEC</span>
+                                        </div>
+                                        <div class="ml-4 md:ml-0 md:mt-4 whitespace-nowrap">
+                                            <p class="text-sm font-bold text-gray-400">2026년 12월</p>
+                                            <p class="text-xs text-gray-400 mt-1">일정 준비중</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
